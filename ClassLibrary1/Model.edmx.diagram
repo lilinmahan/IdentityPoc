@@ -4,14 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="0943942357c145a5a06b55bbe6e12361" Name="Diagram1">
-        <EntityTypeShape EntityType="PocIdModel.User" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="PocIdModel.UserClaim" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="PocIdModel.UserLogin" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="PocIdModel.UserRole" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
-        <AssociationConnector Association="PocIdModel.FK_UserClaim_User" ManuallyRouted="false" />
-        <AssociationConnector Association="PocIdModel.FK_UserLogin_User" ManuallyRouted="false" />
-        <AssociationConnector Association="PocIdModel.UserUserRole" ManuallyRouted="false" />
+      <Diagram DiagramId="1b943c75bbd74d7881df07ac219a2395" Name="Diagram1">
+        <EntityTypeShape EntityType="PocIdModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="6.75" />
+        <EntityTypeShape EntityType="PocIdModel.Role" Width="1.5" PointX="3" PointY="3.75" />
+        <EntityTypeShape EntityType="PocIdModel.User" Width="1.5" PointX="0.75" PointY="2.625" />
+        <EntityTypeShape EntityType="PocIdModel.UserClaim" Width="1.5" PointX="3" PointY="6" />
+        <EntityTypeShape EntityType="PocIdModel.UserLogin" Width="1.5" PointX="3" PointY="1.125" />
+        <AssociationConnector Association="PocIdModel.FK_UserClaim_User" />
+        <AssociationConnector Association="PocIdModel.FK_UserLogin_User" />
+        <AssociationConnector Association="PocIdModel.UserRole" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

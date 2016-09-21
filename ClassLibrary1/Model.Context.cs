@@ -13,10 +13,10 @@ namespace ClassLibrary1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PocIdDbContext : DbContext
+    public partial class PocIdEntities : DbContext
     {
-        public PocIdDbContext()
-            : base("name=PocIdDbContext")
+        public PocIdEntities()
+            : base("name=PocIdEntities")
         {
         }
     
@@ -25,9 +25,10 @@ namespace ClassLibrary1
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserClaim> UserClaims { get; set; }
         public virtual DbSet<UserLogin> UserLogins { get; set; }
-        public virtual DbSet<UserRole> UserRoles { get; set; }
     }
 }
